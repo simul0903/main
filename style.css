@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    
+    align-items: center; 
+    background-color: rgb(253, 253, 253);
+    background: "1.jpeg" no-repeat top center;
+   
+    margin-left: 45%;
+    
+}
+
+h1{
+    text-align: center;
+    top: 0%;
+    left: 50%;
+}
+.checkout_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ transform: translate(-50%,-50%);
+ max-width: 380px;
+ width: 100%;
+ background: rgba(225,225, 225, 0.7);
+ padding: 30px;
+ border-radius: 25px;
+}
+.card_number {
+    margin-bottom: 25px;
+  }
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+   
+    border: 0;
+    text-align: center;
+  }
+  .card_number .input {
+    width: 100%;
+    text-align: left;
+  }
+  .card_grp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .expiry_date .expiry_input {
+    width: 60px;
+    margin-right: 10px;
+  }
+  .cvc .cvc_input {
+    width: 90px;
+    margin-right: 10px;
+  }
+  .expiry_date,
+.cvc {
+  width: 48%;
+  display: flex;
+}
+.cvc {
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 70px;
+  }
+  .btn {
+    width: 100%;
+    background: #064887;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 5px;
+  }
+  @media screen and (max-width: 420px) {
+    .card_grp {
+      flex-direction: column;
+    }
+    .expiry_date {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .expiry_date .expiry_input {
+      width: 48%;
+      margin: 0;
+    }
+    .cvc {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .cvc .cvc_input {
+      width: 48%;
+    }
+    .cvc_img .img {
+      right: 26px;
+    }
+  }
+  
